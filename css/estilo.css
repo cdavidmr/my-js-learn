@@ -1,19 +1,28 @@
-html{background-color: #c6c6c6;}
-body{
-	background-color: transparent;
+html {
+	background-color: #c6c6c6
 }
-nav{
-	background-color: #00440b;
+
+body {
+	font-variant: normal;
+	background-color: transparent
 }
-a:link{
-	text-decoration: none;
+
+nav {
+	background-color: #00440b
 }
-button{
-	cursor: pointer;
+
+a:link {
+	text-decoration: none
 }
-.iconos{
-	font-size: 16px;
+
+button {
+	cursor: pointer
 }
-section{
-	padding-top: 10px;
+
+.iconos {
+	font-size: 16px
+}
+
+section {
+	padding-top: 10px
 }

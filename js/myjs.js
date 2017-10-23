@@ -15,5 +15,13 @@ function TestDom() {
 	//Set class 
 	p1.setAttribute("class",pc2);
 	p2.setAttribute("class",pc1);
+	//
+	var bo1 = document.getElementById("bt1");
+	var color = ["darkred","darkblue","darkgreen","black","purple","gold","tomato","#ee82ee"];
+	var rdm = Math.floor(Math.random()*color.length);
+	//
+	bo1.style.backgroundColor = color[rdm];
+	//
 	console.log(pc1+pc2+pp1);
+	console.log(color[rdm]);
 }
