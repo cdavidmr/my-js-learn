@@ -39,7 +39,7 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="https://github.com/cdavidmr" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://gitlab.com/cdavidmr" target="_blank"><i class="fa fa-gitlab fa-lg" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://gitlab.com/users/cdavidmr/projects" target="_blank"><i class="fa fa-gitlab fa-lg" aria-hidden="true"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i></a></li>
           </ul>
         </div>
@@ -48,14 +48,14 @@
     <!--  -->
       <div class="container container-fluid row text-center">
         <div class="col-sm-4">
-          <p id="par1" class="alert alert-danger">Good Bye</p>
-          <p id="par2" class="alert alert-success">Hello World!</p>
+          <p id="par1" class="alert alert-danger" onclick="OverBg1()">Good Bye</p>
+          <p id="par2" class="alert alert-success" onclick="OverBg2()">Hello World!</p>
           <input id="bt1" type="button" onclick="TestDom()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-dark" value="Click">
         </div>
         <div class="col-sm-2">     
           <div><img id="lamp_img" src="img/lamp-off.png" style="width: 200px;width: 180px"></div>
-          <input id="btn_on" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-info" onclick="lamp()" value="on">
-          <input id="btn_off" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-danger" onclick="lamp()" value="off" disabled>
+          <input id="btn_on" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-info" onclick="Lamp()" value="on">
+          <input id="btn_off" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-danger" onclick="Lamp()" value="off" disabled>
         </div>
         <div class="mdl-card__actions"></div>
       </div>
