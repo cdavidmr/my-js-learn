@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <!-- ICONS -->
     <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <!--  -->
   <body>
@@ -46,19 +46,19 @@
       </nav>
     </header>
     <!--  -->
-    <section>
-      <div class="container col-sm-11 text-center">
-        <div class="container col-sm-4">
+      <div class="container container-fluid row text-center">
+        <div class="col-sm-4">
           <p id="par1" class="alert alert-danger">Good Bye</p>
           <p id="par2" class="alert alert-success">Hello World!</p>
-          <input id="bt1" type="button" onclick="TestDom()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="Click">
-          <div class="bombilla"></div>
-          <input id="on" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="on">
-            <input id="off" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="off">
-          </input>
+          <input id="bt1" type="button" onclick="TestDom()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-dark" value="Click">
         </div>
+        <div class="col-sm-2">     
+          <div><img id="lamp_img" src="img/lamp-off.png" style="width: 200px;width: 180px"></div>
+          <input id="btn_on" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-info" onclick="lamp()" value="on">
+          <input id="btn_off" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-danger" onclick="lamp()" value="off" disabled>
+        </div>
+        <div class="mdl-card__actions"></div>
       </div>
-    </section>
     <!--  -->
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
