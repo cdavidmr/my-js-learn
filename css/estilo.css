@@ -1,28 +1,28 @@
+
 html {
-	background-color: #c6c6c6
+	background-color: #c6c6c6;
 }
 
 body {
-	font-variant: normal;
-	background-color: transparent
+	background-color: transparent;
 }
 
 nav {
-	background-color: #00440b
+	background-color: #00440b;
 }
 
 a:link {
-	text-decoration: none
+	text-decoration: none;
 }
 
 button {
-	cursor: pointer
+	cursor: pointer;
 }
 
-.iconos {
-	font-size: 16px
+i{
+	vertical-align: middle;
 }
 
 section {
-	padding-top: 10px
+	padding-top: 10px;
 }
