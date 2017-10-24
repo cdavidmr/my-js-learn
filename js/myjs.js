@@ -74,3 +74,7 @@ function OverBg1() {
 function OverBg2() {
 	OverBg("par2");
 }
+
+function OverBg3() {
+	OverBg("title1");
+}

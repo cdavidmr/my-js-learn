@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Javascrip learn</title>
     <!-- css links -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <!--  -->
-  <body>
+  <body >
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#"><span class="devicons devicons-javascript_badge"></span> JsLearn</a>
@@ -45,20 +45,28 @@
         </div>
       </nav>
     </header>
-    <!--  -->
-      <div class="container container-fluid row text-center">
-        <div class="col-sm-4">
-          <p id="par1" class="alert alert-danger" onclick="OverBg1()">Good Bye</p>
-          <p id="par2" class="alert alert-success" onclick="OverBg2()">Hello World!</p>
-          <input id="bt1" type="button" onclick="TestDom()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-dark" value="Click">
-        </div>
-        <div class="col-sm-2">     
-          <div><img id="lamp_img" src="img/lamp-off.png" style="width: 200px;width: 180px"></div>
-          <input id="btn_on" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-info" onclick="Lamp()" value="on">
-          <input id="btn_off" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-danger" onclick="Lamp()" value="off" disabled>
-        </div>
-        <div class="mdl-card__actions"></div>
+    <!--  -->    
+
+    <div class="container">
+      <h3 id="title1" class="container-fluid text-center col-sm-3 alert-primary" onclick="OverBg3()">Click on All</h3>
+    </div>    
+
+    <div class="container">
+      <div class="row text-center">
+      <div class="col-sm-4">
+        <p id="par1" class="h4 alert alert-danger" onclick="OverBg1()">Good Bye</p>
+        <p id="par2" class="h4 alert alert-success" onclick="OverBg2()">Hello World!</p>
+        <input id="bt1" type="button" onclick="TestDom()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-dark" value="Click">
       </div>
+      <div class="col-sm-4">
+        <div><img id="lamp_img" src="img/lamp-off.png" style="width: 200px;width: 180px" onclick="Lamp()"></div>
+        <input id="btn_on" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-info" onclick="Lamp()" value="on">
+        <input id="btn_off" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored bg-button bg-danger" onclick="Lamp()" value="off" disabled>
+      </div>
+      <div class="mdl-card__actions"></div>
+    </div>
+  </div>
+    
     <!--  -->
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
