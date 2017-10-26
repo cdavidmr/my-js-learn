@@ -1,4 +1,4 @@
-function TestDom() {
+function testDom() {
 	var p1 = document.getElementById("par1");
 	var p2 = document.getElementById("par2");
 	//get class
@@ -23,11 +23,11 @@ function TestDom() {
 	bo1.classList.remove("bg-dark")
 	bo1.style.backgroundColor = color[rdm];
 	//
-	console.log(pc1 +" "+" "+ pc2 +" "+ pp1);
-	console.log("color: "+color[rdm]);
+	console.log(pc1 + " " + " " + pc2 + " " + pp1);
+	console.log("color: " + color[rdm]);
 }
 
-function Lamp() {
+function lamp() {
 	var btn_on = document.getElementById("btn_on");
 	var btn_off = document.getElementById("btn_off");
 	var img_lamp = document.getElementById("lamp_img");
@@ -43,7 +43,7 @@ function Lamp() {
 	}
 }
 
-function OverBg(x) {
+function overBg(x) {
 	var alert_theme = ["alert-success", "alert-danger", "alert-warning", "alert-dark",
 		"alert-primary", "alert-secondary", "alert-light", "alert-info"
 	];
@@ -67,14 +67,46 @@ function OverBg(x) {
 	}
 }
 
-function OverBg1() {
-	OverBg("par1");
+function overBg1() {
+	overBg("par1");
 }
 
-function OverBg2() {
-	OverBg("par2");
+function overBg2() {
+	overBg("par2");
 }
 
-function OverBg3() {
-	OverBg("title1");
+function overBg3() {
+	overBg("title1");
+}
+
+function overBg4() {
+	overBg("text_date");
+	setTimeout("overBg4()", 1000);
+}
+
+function dateLoad() {
+	var f = new Date();
+	var seconds = f.getSeconds();
+	var hours = f.getHours();
+	var minutes = f.getMinutes();
+	var month = f.getMonth() + 1;
+	var day = f.getDate();
+	if (f.getSeconds() < 10) {
+		seconds = "0" + f.getSeconds();
+	}
+	if (f.getMinutes() < 10) {
+		minutes = "0" + f.getMinutes();
+	}
+	if (f.getHours() < 10) {
+		hours = "0" + f.getHours();
+	}
+	if (f.getMonth() + 1 < 10) {
+		month = "0" + f.getMonth();
+	}
+	if (f.getDate() < 10) {
+		day = "0" + f.getDate();
+	}
+	var fecha = day +"/" + month +"/" + f.getFullYear() + " " + hours +":" + minutes +":" + seconds;
+	document.getElementById("text_date").innerHTML = fecha;
+	setTimeout("dateLoad()", 1000)
 }
