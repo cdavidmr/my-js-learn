@@ -22,9 +22,6 @@ function testDom() {
 	//
 	bo1.classList.remove("bg-dark")
 	bo1.style.backgroundColor = color[rdm];
-	//
-	console.log(pc1 + " " + " " + pc2 + " " + pp1);
-	console.log("color: " + color[rdm]);
 }
 
 function lamp() {
@@ -45,23 +42,18 @@ function lamp() {
 
 function overBg(x) {
 	var alert_theme = ["alert-success", "alert-danger", "alert-warning", "alert-dark",
-		"alert-primary", "alert-secondary", "alert-light", "alert-info"
-	];
+		"alert-primary", "alert-secondary", "alert-light", "alert-info"];
 	var alert1 = document.getElementById(x);
 	var rdm = Math.floor(Math.random() * alert_theme.length);
 	var con = 1;
 	var con1 = 1;
 
 	for (var i = 0; i < alert_theme.length; i++) {
-		console.log("for : " + (i + 1));
 		if (alert1.classList.contains(alert_theme[i]) == true) {
 			while (alert1.classList.contains(alert_theme[i]) == alert1.classList.contains(alert_theme[rdm])) {
 				rdm = Math.floor(Math.random() * alert_theme.length);
-				console.log("iguales: " + con++);
 			}
 			alert1.classList.remove(alert_theme[i]);
-			console.log("else: " + con1++);
-			console.log(alert_theme[i] + " " + alert_theme[rdm]);
 			return alert1.classList.add(alert_theme[rdm]);
 		}
 	}
@@ -106,7 +98,38 @@ function dateLoad() {
 	if (f.getDate() < 10) {
 		day = "0" + f.getDate();
 	}
-	var fecha = day +"/" + month +"/" + f.getFullYear() + " " + hours +":" + minutes +":" + seconds;
+	var fecha = day + "/" + month + "/" + f.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
 	document.getElementById("text_date").innerHTML = fecha;
-	setTimeout("dateLoad()", 1000)
+	setTimeout("dateLoad()", 1000);
 }
+
+
+//ES6
+// setInterval(()=>{
+// 	overBg("text_date");
+// 	setTimeout("overBg4()", 1000);
+// 	var f = new Date();
+// 	var seconds = f.getSeconds();
+// 	var hours = f.getHours();
+// 	var minutes = f.getMinutes();
+// 	var month = f.getMonth() + 1;
+// 	var day = f.getDate();
+// 	if (f.getSeconds() < 10) {
+// 		seconds = "0" + f.getSeconds();
+// 	}
+// 	if (f.getMinutes() < 10) {
+// 		minutes = "0" + f.getMinutes();
+// 	}
+// 	if (f.getHours() < 10) {
+// 		hours = "0" + f.getHours();
+// 	}
+// 	if (f.getMonth() + 1 < 10) {
+// 		month = "0" + f.getMonth();
+// 	}
+// 	if (f.getDate() < 10) {
+// 		day = "0" + f.getDate();
+// 	}
+// 	var fecha = day +"/" + month +"/" + f.getFullYear() + " " + hours +":" + minutes +":" + seconds;
+// 	document.getElementById("text_date").innerHTML = fecha;
+// 	setTimeout("dateLoad()", 1000);
+// }, 1000);
